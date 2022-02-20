@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Frontend mentor solution to Interactive pricing component coded by Jonel Hatwell"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./styles/css/index.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+
+  <div id="main-container">
+      <header class="header">
+        <div class="container">
+          <img src="./images/pattern-circles.svg" alt="pattern">
+          <div class="title">
+            <h1 class="title-mainheading">Simple, traffic-based pricing</h1>
+            <p class="title-subheading">Sign-up for our 30-day trial.
+              <br class="d-sm-none">
+              No credit card required. 
+            </p>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="content">
+            <div class="content-pricing">
+            
+              <p class="pageviews"></p>
+              <div class="range-container">
+                <input type="range" step="1" name="price" id="inp-range" max="4" />
+              </div>
+              
+              <p class="price-container"><span class="price"></span> <span class="time-frame">/month</span></p>
+
+              <div class="billing">
+                <div class="billing-monthly">
+                  <p>month billing</p>
+                  <div class="toggle"></div>
+                </div>
+                <div class="billing-yearly">
+                  <p>year billing</p>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="separator-line"></div>
+
+            <div class="content-trial">
+              <div class="content-left">
+                <div class="offers">
+                  <div class="offer">
+                    <img src="./images/icon-check.svg" alt="check icon">
+                    <p>Unlimited websites</p>
+                  </div>
+                  <div class="offer">
+                    <img src="./images/icon-check.svg" alt="check icon">
+                    <p>Unlimited websites</p>
+                  </div>
+                  <div class="offer">
+                    <img src="./images/icon-check.svg" alt="check icon">
+                    <p>Unlimited websites</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-right">
+                <button class="btn-trial">Start my trial</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://www.linkedin.com/in/jonel-hatwell/" target="_blank">Jonel Hatwell</a>.
+        </div>
+      </footer>
+  </div>
+
+  <script src="./script/index.js"></script>
+</body>
+</html>
