@@ -338,6 +338,10 @@ a{
               justify-content: center;
               align-items: center;
               margin-bottom: .659rem;
+              
+              @include breakpoint(sm){
+                justify-content: flex-start;
+              }
 
               >img{
                 width: 1.250rem;
